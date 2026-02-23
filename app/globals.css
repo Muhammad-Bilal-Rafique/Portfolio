@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #FAFAFA; /* Off-white, easier on eyes than pure white */
+  --color-bg-secondary: #F4F4F5; /* Subtle gray for backgrounds */
+  
+  --color-text-primary: #09090B; /* Near-black for maximum contrast */
+  --color-text-muted: #71717A; /* Zinc gray for subtitles */
+
+  /* Action */
+  --color-action: #10B981; /* Vibrant Emerald Green */
+  --color-action-hover: #059669;
+
+  /* Status */
+  --color-state-error: #EF4444; 
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
