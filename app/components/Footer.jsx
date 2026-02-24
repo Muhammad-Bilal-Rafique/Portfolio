@@ -4,9 +4,8 @@ import React, { useState } from "react";
 import { Mail, Linkedin, Github, MessageCircle, Check } from "lucide-react";
 
 const Footer = () => {
-  // State to manage the "Copied!" animation
   const [copied, setCopied] = useState(false);
-  const email = "bilalrafique271@gmail.com";
+  const email = "bilalrafique2006@gmail.com";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -36,7 +35,7 @@ const Footer = () => {
           
           {/* Primary Button: WhatsApp */}
           <a
-            href="https://wa.me/923041054477?text=Hi%20Bilal,%20I'm%20interested%20in%20a%20Next.js%20project"
+            href="https://wa.me/923079634314?text=Hi%20Bilal,%20I'm%20interested%20in%20a%20Next.js%20project"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 bg-action hover:bg-action/80 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#25D366]/20 w-full sm:w-auto"
