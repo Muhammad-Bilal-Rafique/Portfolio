@@ -5,7 +5,7 @@ import { Mail, Linkedin, Github, MessageCircle, Check } from "lucide-react";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
-  const email = "bilalrafique2006@gmail.com";
+  const email = "bilal@bilaldev.tech";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
