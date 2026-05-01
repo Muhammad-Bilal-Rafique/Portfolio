@@ -135,6 +135,9 @@ const CaseStudy = () => {
                 ))}
               </ul>
             </div>
+            <div>
+                *After optimization, pages loaded visibly <span className="text-action font-semibold">faster</span>, reducing bounce risk and <span className="text-action font-semibold">improving user experience</span> on mobile
+              </div>
           </div>
 
           {/* KEY METRICS TABLE */}
@@ -242,9 +245,7 @@ const CaseStudy = () => {
 
             {/* Disclaimer */}
             <p className="text-xs text-text-muted max-w-xl leading-relaxed">
-              * Performed on a test store to demonstrate methodology. The same
-              audit and fix process applies directly to any live Shopify store
-              with similar app bloat.
+              *This optimization was performed on a controlled test store to demonstrate the exact process used on real Shopify stores
             </p>
           </div>
         </div>
