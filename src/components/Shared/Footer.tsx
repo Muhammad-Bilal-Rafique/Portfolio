@@ -45,7 +45,7 @@ export function Footer() {
           {/* Social Links */}
           <div className="flex items-center gap-2">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/Muhammad-Bilal-Rafique" 
               target="_blank" 
               rel="noreferrer" 
               className="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-full transition-all duration-200"
@@ -54,7 +54,7 @@ export function Footer() {
               <SiGithub className="w-5 h-5" />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="linkedin.com/in/muhammad-bilal-rafique-9b28b038b/" 
               target="_blank" 
               rel="noreferrer" 
               className="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-full transition-all duration-200"
@@ -64,7 +64,7 @@ export function Footer() {
                className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:bilalrafique271@gmail.com" 
               className="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-full transition-all duration-200"
               aria-label="Email"
             >
