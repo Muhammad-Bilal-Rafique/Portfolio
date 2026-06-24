@@ -54,7 +54,7 @@ export function Footer() {
               <SiGithub className="w-5 h-5" />
             </a>
             <a 
-              href="linkedin.com/in/muhammad-bilal-rafique-9b28b038b/" 
+              href="https://www.linkedin.com/in/muhammad-bilal-rafique-9b28b038b/" 
               target="_blank" 
               rel="noreferrer" 
               className="p-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-full transition-all duration-200"

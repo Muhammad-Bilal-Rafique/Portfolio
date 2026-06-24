@@ -26,7 +26,7 @@ const skillCategories = [
     title: "AI & Integrations",
     icon: Sparkles,
     description: "Always eager to learn and deepen my core stack. Currently focused on embedding AI capabilities to build smart, automated web experiences.",
-    skills: ["Vercel AI SDK", "LLM APIs", "AI Summarization", "System Prompts", "RESTful APIs"]
+    skills: ["Vercel AI SDK", "LLM APIs", "AI Summarization", "Prompt Engineering"]
 }
 ];
 
