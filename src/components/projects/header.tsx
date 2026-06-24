@@ -13,7 +13,7 @@ export function ProjectsHeader() {
       <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
         Proof of <span className="text-zinc-600">Work.</span>
       </h1>
-      <p className="text-zinc-400 text-base max-w-2xl leading-relaxed">
+      <p className="text-zinc-400 text-base min-w-xs leading-relaxed">
         A collection of the projects I&apos;ve built so far. Showing my progress from writing my first messy JavaScript apps to building structured, full-stack platforms with Next.js and TypeScript.
       </p>
     </motion.div>

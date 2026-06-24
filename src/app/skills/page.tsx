@@ -51,7 +51,7 @@ const skillCategories = [
 
 export default function SkillsPage() {
   return (
-    <div className="mt-20 w-full max-w-5xl mx-auto flex flex-col gap-12 pb-20">
+    <div className="mt-20 w-full max-w-5xl mx-4 flex flex-col gap-12 pb-20">
       
       {/* Page Header */}
       <motion.div 
