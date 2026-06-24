@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  
+  /* S-Rank Midnight Slate Palette (Deep indigo/navy undertones) */
+  --color-background: hsl(230 25% 7%);
+  --color-foreground: hsl(220 15% 95%);
+  
+  --color-card: hsl(230 25% 10%);
+  --color-card-foreground: hsl(220 15% 95%);
+  
+  --color-popover: hsl(230 25% 7%);
+  --color-popover-foreground: hsl(220 15% 95%);
+  
+  --color-primary: hsl(0 0% 100%);
+  --color-primary-foreground: hsl(230 25% 7%);
+  
+  --color-secondary: hsl(230 20% 16%);
+  --color-secondary-foreground: hsl(220 15% 95%);
+  
+  --color-muted: hsl(230 20% 16%);
+  --color-muted-foreground: hsl(220 15% 65%);
+  
+  --color-accent: hsl(230 20% 16%);
+  --color-accent-foreground: hsl(220 15% 95%);
+  
+  --color-border: hsl(230 20% 16%);
+  --color-input: hsl(230 20% 16%);
+  --color-ring: hsl(230 80% 65%); /* A striking blue focus ring */
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root, .dark {
+  --background: 230 25% 7%;
+  --foreground: 220 15% 95%;
+  --card: 230 25% 10%;
+  --card-foreground: 220 15% 95%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 230 25% 7%;
+  --secondary: 230 20% 16%;
+  --secondary-foreground: 220 15% 95%;
+  --muted: 230 20% 16%;
+  --muted-foreground: 220 15% 65%;
+  --border: 230 20% 16%;
+  --radius: 0.75rem;
+}
+
+html, body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+@utility bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+@utility glass-panel {
+  background-color: rgba(13, 14, 21, 0.75); /* Adjusted to match the midnight tone */
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
