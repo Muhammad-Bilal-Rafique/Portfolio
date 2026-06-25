@@ -32,7 +32,7 @@ export function ContactInfo() {
           Let&apos;s build something.
         </h2>
         <p className="text-zinc-400 text-base leading-relaxed max-w-md">
-          Whether you&apos;re a recruiter looking to fill a summer role (July 10th - Sept 15th) or looking to connect over web architecture, my inbox is open.
+          Whether you&apos;re a recruiter looking to fill a summer role or looking to connect over web architecture, my inbox is open.
         </p>
       </motion.div>
 
