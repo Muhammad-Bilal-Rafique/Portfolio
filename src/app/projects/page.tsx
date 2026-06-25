@@ -42,7 +42,7 @@ const miniProjects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="container w-full max-w-5xl mx-2 mt-20 flex flex-col gap-20">
+    <div className="container w-full max-w-5xl px-4 mt-20 flex flex-col gap-20">
       
       <ProjectsHeader />
 
