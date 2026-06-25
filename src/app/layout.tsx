@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/Shared/Navar";
 import { Footer } from "@/components/Shared/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
+        <Analytics />
       </body>
     </html>
   );
