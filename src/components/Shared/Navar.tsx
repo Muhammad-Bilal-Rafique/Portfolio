@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, FileText } from "lucide-react";
+import Image from "next/image";
+import BilalImg from "../../../public/me.jpg";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -21,10 +23,16 @@ export function Navbar() {
   return (
     <header className="fixed top-5 inset-x-0 z-50 max-w-5xl mx-auto px-4">
       <nav className="glass-panel rounded-full py-2.5 px-5 flex items-center justify-between shadow-2xl shadow-black/50">
-        
         {/* Brand Logo */}
-        <Link href="/" className="font-bold text-white text-base tracking-tight hover:opacity-80 transition-opacity">
-          Bilal<span className="text-zinc-500 font-normal text-xs ml-0.5">.dev</span>
+        <Link href="/" className="hover:opacity-80 transition-opacity">
+          <Image
+            src={BilalImg}
+            alt="Bilal Rafique"
+            width={40}
+            height={40}
+            className="rounded-full object-cover"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -44,7 +52,13 @@ export function Navbar() {
                     transition={{ type: "spring", stiffness: 400, damping: 33 }}
                   />
                 )}
-                <span className={isActive ? "text-black font-semibold" : "text-zinc-400 hover:text-white"}>
+                <span
+                  className={
+                    isActive
+                      ? "text-black font-semibold"
+                      : "text-zinc-400 hover:text-white"
+                  }
+                >
                   {link.name}
                 </span>
               </Link>
@@ -54,16 +68,16 @@ export function Navbar() {
 
         {/* Desktop Actions (CV + Hire Me) */}
         <div className="hidden md:flex items-center gap-4">
-          <a 
-            href="/cv.pdf" 
+          <a
+            href="/cv.pdf"
             download
             className="flex items-center gap-1.5 text-xs font-semibold text-zinc-400 hover:text-white transition-colors duration-200"
           >
             <FileText className="w-3.5 h-3.5" />
             CV
           </a>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="inline-flex items-center justify-center bg-white text-black hover:bg-zinc-200 rounded-full text-xs font-semibold px-4 py-2 transition-colors duration-200 group"
           >
             Hire Me
@@ -99,8 +113,8 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl transition-all ${
-                    isActive 
-                      ? "bg-white text-black font-semibold" 
+                    isActive
+                      ? "bg-white text-black font-semibold"
                       : "text-zinc-400 hover:bg-white/5 hover:text-white"
                   }`}
                 >
@@ -108,19 +122,19 @@ export function Navbar() {
                 </Link>
               );
             })}
-            
+
             {/* Mobile Actions Grid */}
             <div className="flex gap-2 mt-2">
-              <a 
-                href="/cv.pdf" 
+              <a
+                href="/cv.pdf"
                 download
                 className="flex-1 inline-flex items-center justify-center border border-zinc-700 text-zinc-300 hover:text-white hover:bg-zinc-800 rounded-xl font-semibold py-3 text-sm transition-colors duration-200"
               >
                 <FileText className="mr-1.5 w-4 h-4" />
                 CV
               </a>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 onClick={() => setIsOpen(false)}
                 className="flex-2 inline-flex items-center justify-center bg-white text-black hover:bg-zinc-200 rounded-xl font-semibold py-3 text-sm transition-colors duration-200"
               >
