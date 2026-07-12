@@ -52,7 +52,7 @@ export default function Footer() {
           {/* Top CTA Section */}
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20 md:mb-24">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground mb-6 leading-[1.1]">
-              Let's Build a Professional Website for Your Business.
+              Let&apos;s Build a Professional Website for Your Business.
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl">
               Whether you&apos;re just getting started or already selling through Instagram and WhatsApp, 

@@ -439,7 +439,7 @@ export function Problems() {
           <ProblemCard
             title={
     <>
-      Social media alone doesn't make <span className="text-ring">enough trust</span>
+      Social media alone doesn&apos;t make <span className="text-ring">enough trust</span>
     </>
   }
             caption="Without a real storefront, hesitation wins."
