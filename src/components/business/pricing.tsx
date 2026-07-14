@@ -39,7 +39,6 @@ const packages = [
 "Admin: Order Details & Status",
 "Admin: Inventory Management",
 "Admin: Add/Edit Products",
-"WhatsApp Order Confirmation",
 "Contact Form, Google Maps, Social Links",
 "Fast Performance, Basic SEO",
 "Deployment Assistance",
