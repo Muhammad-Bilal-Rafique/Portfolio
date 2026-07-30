@@ -30,20 +30,22 @@ const packages = [
     currency: "PKR",
     price: "15,000",
     features: [
-      "Up to 8 Pages",
-"Premium UI Design, Fully Responsive",
-"Product Catalog + Categories",
-"Product Detail Pages",
-"Cart Flow",
-"Simple Admin Panel",
-"Admin: Order Details & Status",
-"Admin: Inventory Management",
-"Admin: Add/Edit Products",
-"Contact Form, Google Maps, Social Links",
-"Fast Performance, Basic SEO",
-"Deployment Assistance",
-"Two Revision Rounds",
-"30 Days Support",
+      "Upto 8 Pages",
+      "Responsive Design",
+      "Categories",
+      "Product Search",
+      "Product Filters",
+      "Product Gallery",
+      "Shopping Cart",
+      "Cash on Delivery",
+      "Product Management",
+      "Inventory/Stock Management",
+      "Basic SEO",
+      "Contact Page",
+      "About Page",
+      "Social Links",
+      "WhatsApp Integration",
+      "1 Revision Round"
     ],
     buttonText: "Get Started",
     popular: false,
@@ -58,18 +60,23 @@ const packages = [
     price: "20,000",
     includesPrevious: "Everything in Starter Plus",
     features: [
-      "Everything in Starter, plus:",
-"Product Search",
-"Customer Accounts",
-"Order History",
-"Wishlist",
-"Advanced Admin Dashboard",
-"Admin: Monthly Sales Reports + Analytics",
-"Admin: Download Sales reports",
-"Order Tracking for Customers",
-"Better SEO",
-"Performance Optimization",
-"Priority Support",
+      "Product Variant",
+      "Wishlist",
+      "Payment Verification",
+      "Email Order Confirmation",
+      "Bank Transfer/Easypaisa",
+      "JazzCash Payment",
+      "Payment Screenshot Upload",
+      "Order Tracking",
+      "Customer Accounts",
+      "Customer Reviews",
+      "Basic SEO",
+      "Dashboard & Analytics",
+      "Top Product",
+      "Sales Report",
+      "Role Based Admin Accounts",
+      "2 Revision Rounds",
+      "30 Days Free Maintenance"
     ],
     buttonText: "Let's Build It",
     popular: true,
@@ -79,21 +86,23 @@ const packages = [
     name: "Premium",
     description:
       "Best for brands looking for custom solutions and future growth.",
-    priceLabel: "Custom Quote",
-    currency: "",
-    price: "",
+    priceLabel: "Starting at",
+    currency: "PKR",
+    price: "35,000",
     includesPrevious: "Everything in Growth",
     features: [
-      "Everything in Growth, plus:",
-"AI Product Recommendations",
-"AI Customer Support (Chatbot)",
-"AI Review Summaries",
-"Third-Party API Integrations",
-"Custom Features (Business-Specific)",
-"Multi-Admin Access & Roles",
-"Advanced Analytics & Reporting",
-"Future Scalability Planning",
-"Dedicated Priority Support",
+      "AI Product Recommendations",
+      "AI Review Summarizer",
+      "AI Chatbot",
+      "Revenue Statistics",
+      "Coupon Codes",
+      "Banner Management",
+      "Multi-Admin Roles",
+      "Super Admin",
+      "Urdu Language Toggle",
+      "Automated Stock Alert to Admin",
+      "Advanced Analytics",
+      "60 Days Free Maintenance"
     ],
     buttonText: "Contact Me",
     popular: false,
@@ -175,11 +184,10 @@ export default function Pricing() {
                 y: -8,
                 transition: { duration: 0.3, ease: "easeOut" },
               }}
-              className={`relative flex flex-col h-full rounded-2xl glass-panel p-8 transition-all duration-300 ${
-                pkg.popular
+              className={`relative flex flex-col h-full rounded-2xl glass-panel p-8 transition-all duration-300 ${pkg.popular
                   ? "border-ring/30 shadow-[0_0_40px_rgba(255,255,255,0.05)] lg:scale-105 z-10 bg-card/80"
                   : "border-white/5 hover:border-white/15 bg-black/20"
-              }`}
+                }`}
             >
               {/* Popular Badge & Subtle Glow for Middle Card */}
               {pkg.popular && (
@@ -252,19 +260,18 @@ export default function Pricing() {
               </div>
 
               {/* Button */}
-         <a
-  href={getWhatsAppLink(pkg.name)}
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`${buttonVariants({ 
-    size: "lg", 
-    variant: pkg.popular ? "default" : "secondary" 
-  })} w-full mt-auto font-medium transition-all ${
-    pkg.popular ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md" : ""
-  }`}
->
-  {pkg.buttonText}
-</a>
+              <a
+                href={getWhatsAppLink(pkg.name)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${buttonVariants({
+                  size: "lg",
+                  variant: pkg.popular ? "default" : "secondary"
+                })} w-full mt-auto font-medium transition-all ${pkg.popular ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md" : ""
+                  }`}
+              >
+                {pkg.buttonText}
+              </a>
             </motion.div>
           ))}
         </motion.div>
