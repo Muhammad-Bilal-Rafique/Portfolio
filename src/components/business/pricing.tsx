@@ -88,7 +88,7 @@ const packages = [
       "Best for brands looking for custom solutions and future growth.",
     priceLabel: "Starting at",
     currency: "PKR",
-    price: "35,000",
+    price: "Custom Quote",
     includesPrevious: "Everything in Growth",
     features: [
       "AI Product Recommendations",
