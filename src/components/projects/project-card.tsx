@@ -11,7 +11,7 @@ interface ProjectCardProps {
   description: string;
   tech: string[];
   liveUrl?: string;
-  githubUrl: string;
+  githubUrl?: string;
   image?: StaticImageData | string;
   featured: boolean;
 }
@@ -76,15 +76,17 @@ export function ProjectCard({
               <ArrowUpRight className="ml-1.5 w-4 h-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
             </a>
           )}
-          <a 
-            href={githubUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-transparent border border-zinc-700 text-zinc-300 hover:text-white hover:bg-zinc-800 font-medium text-sm px-5 py-2.5 rounded-full transition-all duration-200"
-          >
-            <SiGithub className="mr-2 w-4 h-4" />
-            Source
-          </a>
+          {githubUrl && (
+            <a 
+              href={githubUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-transparent border border-zinc-700 text-zinc-300 hover:text-white hover:bg-zinc-800 font-medium text-sm px-5 py-2.5 rounded-full transition-all duration-200"
+            >
+              <SiGithub className="mr-2 w-4 h-4" />
+              Source
+            </a>
+          )}
         </div>
       </div>
 
